@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js" ></script>
+</head>
+<body >
+     
+    <div id="whatToPrint"  class="container" style="width: 1000px;">
+       <div class="profile"> 
+        <div  class="profile_container">
+            <div id="whatToPrint" class="profile_profileImg">
+                <img   src="images/profile_profileImg.JPG" alt="OLeh Zeleniuk">
+                
+            </div>
+            <div>
+                <h1 class="profile_name">
+                   <span class="profile_name_firstname">Oleh</span>
+                   <span class="profile_name_lastname">Zeleniuk</span>  
+                </h1>
+                <p class="profile_title">Truck Dispatcher</p>
+                <p class="description_intro">Truck Dispatcher with 5 years of experience in Serving as a reliable point of contact to balance
+                    drivers' health and safety with customer requirements. Responsible for Coordinating and
+                    managing most efficient loads to remain cost-effective as a company, combining shipments based
+                    on their routes and timeline to minimize how many trucks and drivers are out, etc,.</p>
+                    
+            </div>
+            <a href="javascript:generatePDF(2)" id="downloadButton">Click to download</a>
+        </div>
+       </div>
+       <div class="group-1">
+        <div class="skills">
+            <h3 class="title">Expertise</h3>
+            <ul class="skill_list discription">
+                <li>Dry Van</li>
+                <li>Reefer</li>
+                <li>Flatbed</li>
+                <li>Step deck</li>
+            </ul>
+        </div>
+        <div class="ref">
+            <h3 class="title">Reference</h3>
+            <div class="ref_item">
+                <h4 class="ref_name">ACKERS ENTERPRISES LLC</h4>
+                <p class="description">
+                    Omshanti Barber
+                </p>
+                <p class="cell">+1 (919) 641 2446</p>
+            </div>
+            <div class="ref_item">
+                <h4 class="ref_name">Khaloo Logistics</h4>
+                <p class="description">
+                    Charles Ashong 
+                </p>
+                <p class="cell">+1(904) 762-6060</p>
+            </div>
+            <div class="ref_item">
+                <h4 class="ref_name">Greatwide</h4>
+                <p class="description">
+                    Joshua Hawthorne
+                </p>
+                <p class="cell">+1 (561) 785 2069</p>
+            </div>
+            </div>
+            <div class="edu">
+                <h3 class="title">Education</h3>
+                <div class="edu_item">
+                    <p class="item_preTitle">2014-2020</p>
+                    <h4 class="item_title">Accounting</h4>
+                <p class="item_subtitle">University of the State Fiscal Service of Ukraine</p>
+                </div>
+                <div class="edu_item">
+                    <p class="item_preTitle">2017-2018</p>
+                    <h4 class="item_title">Truck Dispatcher</h4>
+                <p class="item_subtitle">Five Star Dispatch </p>
+                </div>
+            </div>
+            <div  class="awards">
+                <h3 class="title">Awards</h3>
+                <div class="awards_item">
+                    <p class="item_pretitle">2021</p>
+                    <h4 class="item_title">Best Dispatcher of the Year</h4>
+                    <p class="discription">I had best Gross revenue over $ 4M </p>
+    
+                </div>
+        </div>
+       
+       </div>
+       <div class="group-2">
+        <div class="exp">
+            <h3 class="titel">Experience</h3>
+            <div class="exp_item">
+                <p class="item_pretitle">2017-2023</p>
+           <h4 class="item_title">Greatwide</h4>
+           <p class="item_subtitle">Truck dispatcher</p>
+
+            <ul class="discription">
+                <li>Received, scheduled, tracked, and invoiced orders for delivery Shipment management (traced
+                    and tracked all shipments to ensure on-time and safe delivery of all loads).</li>
+                <li>Loaded planning (directed dispatching and routing of all company vehicles) and managed
+                    multiple driver units</li>
+                <li>Arranged for necessary repairs in order to restore service and schedules.
+                     Advised personnel about traffic problems such as construction areas, accidents, congestion,
+                    weather conditions, and other hazards.</li>
+                <li>Advised the customer of the estimated time of arrival on the event and follow instructions per
+                    their requirements.</li>
+            </ul>
+        </div>
+        <div class="exp_item">
+            <p class="item_pretitle">2019-2023</p>
+       <h4 class="item_title">ACKERS ENTERPRISES LLC</h4>
+       <p class="item_subtitle">Truck dispatcher</p>
+
+        <ul class="discription">
+            <li>Managing truck drivers' schedules and routes.</li>
+            <li>  Providing shipping details to customers.</li>
+            <li> Scheduling freight to be picked up and delivered.</li>
+            <li>Booking loads</li>
+        </ul>
+       
+    </div>
+    <div class="exp_item">
+        <p class="item_pretitle">2022-2023</p>
+   <h4 class="item_title">Khaloo Logistics</h4>
+   <p class="item_subtitle">Truck dispatcher</p>
+
+    <ul class="discription">
+        <li>Schedule drivers to pick up and deliver loads to customers or vendors.  </li>
+        <li>Keeping records, monitoring driver daily logs for errors or violations.</li>
+        <li>Monitoring drivers' working hours and equipment availability.</li>
+        <li> Keep track of weather of all drivers locations in order to flag potential issues..</li>
+    </ul>
+</div>
+        
+        </div>
+        <div  class="interest">
+            <h3 class="title">Interests</h3>
+            <div class="interest_items">
+                <div class="interest_item">
+                    <i data-feather="headphones"></i>
+                    <span>Music</span>
+                </div>
+                <div class="interest_item">
+                    <i data-feather="map"></i>
+                    <span>Traveling</span>
+                </div>
+                <div class="interest_item">
+                    <i data-feather="book"></i>
+                    <span>Books</span>
+                </div>
+                <div class="interest_item">
+                    <i data-feather="award"></i>
+                    <span>Sport</span>
+                </div>
+            </div>
+        </div>
+       </div>
+       <hr>
+       <div  class="group-3"> 
+        <div  class="contact">
+            <h3 class="title">Contact</h3>
+            <div class="contact_info">
+                <p class="discription">+1 (678) 607 2550</p>
+            <p class="discription">zeleniuk.oleh@gmail.com</p>
+            </div>
+        </div>
+        <div  class="socials">
+            <h3 class="title">Socials</h3>
+            <div class="social_items">
+                <a class="social_item" href="https://instagram.com/oleg_zeleniuk?igshid=MjEwN2IyYWYwYw=="> 
+                    <i data-feather="instagram"></i>
+                    <span>@oleg_zeleniuk</span>
+                </a>
+            </div>
+        </div>
+       </div>
+       
+    </div>
+
+    <script>
+        feather.replace()
+      </script>
+      <script>
+        async function generatePDF() {
+            document.getElementById("downloadButton").innerHTML = "";
+
+            //Downloading
+            var downloading = document.getElementById("whatToPrint");
+            var doc = new jsPDF('1','pt',"a4");
+
+            await html2canvas(downloading, {
+                //allowTaint: true,
+                //useCORS: true,
+                width: 1100
+            }).then((canvas) => {
+                //Canvas (convert to PNG)
+                doc.addImage(canvas.toDataURL("image/png"), 'PNG', 5, 5, 644, 850);
+            })
+
+            doc.save("Document.pdf");
+
+            //End of downloading
+
+            document.getElementById("downloadButton").innerHTML = "Click to download";
+        }
+    </script>
+</body>
+</html>
+
+<!--
+
+HTML + CSS -> PNG (html2canvas)
+PNG -> Add to PDF (jsPDF)
+Download PDF (jsPDF)
